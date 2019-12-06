@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Lodash Presentation by Katsiaryna Zhdanovich</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/sky.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<link rel="stylesheet" href="./css/style.css">
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<img class="img1" src="../assets/images/img-1.png" alt="Lodash">
+					<p>
+						<small>Created by <a target="_blank" href="https://github.com/katharinazh">Katsiaryna Zhdanovich</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Lodash</h2>
+					<p class="text_justify"> &#8211 is a JavaScript library which provides utility functions for common programming tasks using the functional programming paradigm.</p>
+					<img class="logo" src="../assets/images/img-1.png" alt="Lodash">
+				</section>
+				<section>
+					<h3>A little about Language</h3>
+					<div>
+						<p>	<b> <code>_.is</code></b> functions for determining type (instead of <code>var == null</code>.)
+							<br>
+								<small> (<code> _.isUndefined, _.isString, _.isNumber, _.isArray </code>) </small>
+						</p>
+						<p>
+							<b> <code> _.to </code> </b> functions for converting type. 
+							<br>
+							<small>(<code> _.toArray, _.toInteger, _.toNumber, _.toString</code>)</small>
+						</p>
+					</div>
+					<img class="logo" src="../assets/images/img-1.png" alt="Lodash">
+				</section>
+
+				<section>
+					<section>
+						<h3>Main areas:</h3>
+						<ul class="areas no_marker">
+							<li>1. Utilities</li>
+							<li>2. Function</li>
+							<li>3. String</li>							
+							<li>4. Array</li>
+							<li>5. Collection</li>
+							<li>6. Object</li>
+							<li>7. Seq</li>
+						</ul>						
+						<img class="logo" src="../assets/images/img-1.png" alt="Lodash">
+					</section>
+					<section>
+						<h3>Math, Date, Number, and Util:</h3>
+						<ul class="text_justify no_marker">
+							<li>
+								Functions for simplifying dealing with math, date and number operations. 
+								<small>(<code>_.floor, _.max, _.min, _.round, _.clamp, and _.now.</code>) </small>
+							</li>
+							<li>
+								<b> <code> _.bindAll </code></b> function causes all methods belonging to an object to have the same context.
+							</li>
+						</ul>
+						<img class="logo" src="../assets/images/img-1.png" alt="Lodash">
+					</section>
+					
+					<section>
+						<h3>Function</h3>
+						<div class="text_justify no_marker">
+							<p>
+								<b> <code> _.bind </code> </b> replaces <code> call(), apply() or bind()</code>.
+							</p>
+							<p>
+								<b> Caching </b>via <code> _.memoize</code>
+							</p>
+							<p>
+								<b> Currying</b> via <code> _.curry and _.curryRight</code>
+							</p>
+							<p>
+								<b> Limiting call counts</b> via <code> _.once, _.before, and _.after</code>	
+							</p>
+						</div>
+						<img class="logo" src="../assets/images/img-1.png" alt="Lodash">
+					</section>
+
+					<section>
+						<h3>String</h3>
+						<ul class="text_justify">
+							<li>
+								Character change via :
+								<br> 
+								<code> _.lowerCase, _.toLower, _.upperCase, _.toUpper, _.capitalize, _.camelCase, _.kebabCase, _.upperFirst, _.replace</code>, etc.
+							</li>
+							<li>
+								String conversion via:
+								<br>
+								<code> _.pag, _.trim, _.words, _.split, _.repeat</code>, etc.								
+							</li>
+						</ul>
+						<img class="logo" src="../assets/images/img-1.png" alt="Lodash">
+					</section>
+					<section>
+						<h3>Arrays</h3>
+						<div class="text_justify no_marker arr">
+							<p>
+								<b> truncation and splitting </b> via:
+								<br>
+								<code> _.slice, _.compact, _.difference, _.chunk, _.drop, _.intersection, _.pull, _.remove</code>, etc.
+							</p>
+							<p>
+								<b> combination</b> via:
+								<br>
+								<code> _.join, _.fill, _.concat, _.union, _.intersection, _.xor</code>, etc.
+							</p>
+							<p>
+								<b> modification</b> via: 
+								<br>
+								<code> _.reverse, _.flatten, and _.flattenDeep</code>
+							</p>
+							<p>
+								<b>creation and compression</b> via:
+								<br>
+								<code> _.fromPairs, _.zip, _.unzip</code>, etc.								
+							</p>
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<h3>Why lodash?</h3>
+					<ul class="text_justify no_marker">
+						<li> <p>1.	Keeps code minimal and neat.</p>
+							<pre><code class="hljs javascript data-trim contenteditable">
+								_.intersection([2, 1], [2, 3]);
+								// => [2]
+								</code>
+								<code class="hljs javascript data-trim contenteditable">
+								_.union([2], [1, 2]);
+								// => [2, 1]
+							</code></pre>
+						</li>
+						<li> <p>2. Easier to code. Just to remember some functions</p>
+							<pre><code class="hljs javascript data-trim contenteditable">
+								var arr = ['apple', 'banana', 'strawberry', 'banana', 'orange']; </code>
+								<code class="hljs javascript data-trim contenteditable">
+								var arr = _.concat(arr, 2, [3], [[4]]);</code>
+								<code class="hljs javascript data-trim contenteditable">
+								console.log(arr);</code>
+								<code class="hljs javascript data-trim contenteditable">
+								// output: ["apple", "banana", "strawberry", "banana", "orange", 2, 3, Array(1)]
+							</code></pre>
+						</li>
+						<li> <p>3. Even newbies can understand</p>
+							<pre><code class="hljs javascript data-trim contenteditable">
+								_.uniq([2, 1, 2]);
+								// => [2, 1]
+							</code></pre>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<section>
+						<h3>More Examples</h3>
+						<h4>Loops</h4>
+						<p class="left">Pure JS</p>
+						<pre><code class="hljs javascript">
+							var arr = ['apple', 'banana', 'strawberry', 'banana', 'orange'];
+							for(var i = 0; i &#60; arr.length; i++) {
+							</code>
+							<code>
+								console.log('fruit: ' + arr[i]);
+							}
+						</code></pre>
+						<p class="left">Lodash</p>
+						<pre><code class="hljs javascript">
+							var arr = ['apple', 'banana', 'strawberry', 'banana', 'orange'];
+							_.each(arr, function(fruit, index, fruits) {
+								</code>
+								<code>
+							console.log('fruit: ' + fruit);
+							});
+						</code></pre>
+						<img class="logo" src="../assets/images/img-1.png" alt="Lodash">
+					</section>
+					<section>
+						<p>Grouping array by length of string with <b> _.groupBy</b></p>
+						<pre><code class="hljs javascript">
+							_.groupBy(['apple', 'banana', 'orange'], 'length');
+							// => { '0': ['apple'], '1': ['banana', 'orange'] }
+						</code></pre>
+						<img class="logo" src="../assets/images/img-1.png" alt="Lodash">
+					</section>
+
+					<section>
+						<p>Finding the object and extending it: <b> _.find and _.extend.</b></p>
+						<pre><code class="hljs javascript">
+							var arr1 = [{'fruit': 'apple'}, {'fruit': 'banana'}, {'fruit': 'strawberry'}, {'fruit': 'banana'}, {'fruit': 'orange'}]
+							</code>
+							<code class="hljs javascript">
+							var arr = _.find(arr1, function(obj){ 
+							</code>
+							<code class="hljs javascript">							
+								if(obj.fruit == "apple"){
+							</code>
+							<code class="hljs javascript">
+
+									arr1.push(_.extend(obj, {"quantity": 20}));
+								}
+							});
+							</code>
+							<code class="hljs javascript">
+							console.log(arr1)
+						</code></pre>
+						<img class="logo" src="../assets/images/img-1.png" alt="Lodash">
+					</section>	
+				</section>
+				<section>
+					<h2 class="final_words">Final Words </h2>
+					<h3>Lodash makes JavaScript easier</h3>
+				</section>
+				<section>
+					<h3>Thank you for your attention </h3>
+					<img class="final" src="https://media.giphy.com/media/7FCFG6sYV5UxW/giphy.gif" alt="angular">
+				</section>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
